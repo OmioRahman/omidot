@@ -1,3 +1,21 @@
+# **Omidot**
+<p align="center">
+
+    <img src="logo_outlined.svg" width="400" alt="Godot Engine logo">
+
+</p>
+
+## Features
+
+- **Fork of Godot engine**: In case my country get sanction and so i can continue to use the engine
+- **For archivial and personal projects**: I want to continue the project and can inspite if the license changes and my country gets sanction
+- **To learn programming and experiment with the engine **:   i want to get good at programming . -dont expect a stable product as i will expermient on it
+- - **For reasearch purposes**:  
+
+- **Adding custom modification and astehtics**: I want to add my own features to the engine to focus it on codeless if i get good at programming
+- I dont know how to change logo
+
+#**original readme:**
 # Godot Engine
 
 <p align="center">
@@ -5,7 +23,6 @@
     <img src="logo_outlined.svg" width="400" alt="Godot Engine logo">
   </a>
 </p>
-
 ## 2D and 3D cross-platform game engine
 
 **[Godot Engine](https://godotengine.org) is a feature-packed, cross-platform
