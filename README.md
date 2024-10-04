@@ -1,7 +1,7 @@
 # **Omidot**
 <p align="center">
 <a
-    <img src="logo_outlined.svg" width="400" alt="Godot Engine logo">
+    <img src="images/logo_outlined.svg" width="400" alt="Omidot Engine logo">
 </a>
 </p>
 
