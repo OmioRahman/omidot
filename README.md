@@ -1,8 +1,8 @@
 # **Omidot**
 <p align="center">
-<a
-    <img src="images/omidotimage.png" width="400" alt="Omidot Engine logo">
-</a>
+
+<img src="images/omidotimage.png" width="400" alt="Omidot Engine logo">
+
 </p>
 
 ## Features
