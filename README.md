@@ -18,11 +18,7 @@
 #**original readme:**
 #Its a fork of  Godot Engine
 
-<p align="center">
-  <a href="https://godotengine.org">
-    <img src="logo_outlined.svg" width="400" alt="Godot Engine logo">
-  </a>
-</p>
+
 ## a fork of godot 2D and 3D cross-platform game engine
 
 **Fork of [Godot Engine](https://godotengine.org) is a feature-packed, cross-platform
