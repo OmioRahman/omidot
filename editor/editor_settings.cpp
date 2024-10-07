@@ -1063,6 +1063,11 @@ void EditorSettings::_load_godot2_text_editor_theme() {
 	_initial_set("text_editor/theme/highlighting/folded_code_region_color", Color(0.68, 0.46, 0.77, 0.2));
 	_initial_set("text_editor/theme/highlighting/search_result_color", Color(0.05, 0.25, 0.05, 1));
 	_initial_set("text_editor/theme/highlighting/search_result_border_color", Color(0.41, 0.61, 0.91, 0.38));
+
+	// Text editor colors
+    _initial_set("editors/text_editor/background_color", Color(0.76, 0.60, 0.42)); // Light brown
+    _initial_set("editors/text_editor/accent_color", Color(0.55, 0.27, 0.07)); // Dark brown
+    _initial_set("editors/text_editor/text_color", Color(0.2, 0.2, 0.2)); // Dark brown or black
 }
 
 void EditorSettings::_load_default_visual_shader_editor_theme() {
