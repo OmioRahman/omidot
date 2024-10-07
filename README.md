@@ -8,7 +8,7 @@
 ## Features
 
 - **Fork of Godot engine**: In case my country get sanction and so i can continue to use the engine
-- **For archivial and personal projects**: I want to continue the project and can inspite if the license changes and my country gets sanction
+- **For Commercial, Archivial and personal projects**: I want to continue the project and can inspite if the license changes and my country gets sanction
 - **To learn programming and experiment with the engine **:   i want to get good at programming . -dont expect a stable product as i will expermient on it
 - - **For reasearch purposes**:  
 
