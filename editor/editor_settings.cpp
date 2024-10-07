@@ -1087,6 +1087,14 @@ void EditorSettings::_load_default_visual_shader_editor_theme() {
 	_initial_set("editors/visual_editors/category_colors/vector_color", Color(0.2, 0.2, 0.5));
 	_initial_set("editors/visual_editors/category_colors/special_color", Color(0.098, 0.361, 0.294));
 	_initial_set("editors/visual_editors/category_colors/particle_color", Color(0.12, 0.358, 0.8));
+	// Background color
+    _initial_set("editors/visual_editors/background_color", Color(0.96, 0.94, 0.90)); // Light beige
+
+    // Accent color
+    _initial_set("editors/visual_editors/accent_color", Color(1.0, 0.75, 0.8)); // Soft pink
+
+    // Text color
+    _initial_set("editors/visual_editors/text_color", Color(0.2, 0.2, 0.2)); // Dark brown
 }
 
 bool EditorSettings::_save_text_editor_theme(const String &p_file) {
