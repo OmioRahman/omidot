@@ -1,19 +1,18 @@
 <?xml version="1.0"?>
 <mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+  <!-- Godot MIME types -->
   <mime-type type="application/x-godot-project">
     <comment>Godot Engine project</comment>
     <sub-class-of type="text/plain"/>
     <icon name="x-godot-project"/>
     <glob pattern="project.godot"/>
   </mime-type>
-
   <mime-type type="application/x-godot-resource">
     <comment>Godot Engine resource</comment>
     <icon name="x-godot-resource"/>
     <glob pattern="*.res"/>
     <glob pattern="*.tres"/>
   </mime-type>
-
   <mime-type type="application/x-godot-scene">
     <comment>Godot Engine scene</comment>
     <icon name="x-godot-scene"/>
@@ -21,18 +20,49 @@
     <glob pattern="*.tscn"/>
     <glob pattern="*.escn"/>
   </mime-type>
-
   <mime-type type="application/x-godot-shader">
     <comment>Godot Engine shader</comment>
     <sub-class-of type="text/plain"/>
     <icon name="x-godot-shader"/>
     <glob pattern="*.gdshader"/>
   </mime-type>
-
   <mime-type type="application/x-gdscript">
     <comment>GDScript script</comment>
     <sub-class-of type="text/plain"/>
     <icon name="x-gdscript"/>
     <glob pattern="*.gd"/>
+  </mime-type>
+
+  <!-- Omidot MIME types -->
+  <mime-type type="application/x-omidot-project">
+    <comment>Omidot Engine project</comment>
+    <sub-class-of type="text/plain"/>
+    <icon name="x-omidot-project"/>
+    <glob pattern="project.omidot"/>
+  </mime-type>
+  <mime-type type="application/x-omidot-resource">
+    <comment>Omidot Engine resource</comment>
+    <icon name="x-omidot-resource"/>
+    <glob pattern="*.ores"/>
+    <glob pattern="*.tres"/>
+  </mime-type>
+  <mime-type type="application/x-omidot-scene">
+    <comment>Omidot Engine scene</comment>
+    <icon name="x-omidot-scene"/>
+    <glob pattern="*.osc"/>
+    <glob pattern="*.tscn"/>
+    <glob pattern="*.escn"/>
+  </mime-type>
+  <mime-type type="application/x-omidot-shader">
+    <comment>Omidot Engine shader</comment>
+    <sub-class-of type="text/plain"/>
+    <icon name="x-omidot-shader"/>
+    <glob pattern="*.odshader"/>
+  </mime-type>
+  <mime-type type="application/x-odscript">
+    <comment>ODScript script</comment>
+    <sub-class-of type="text/plain"/>
+    <icon name="x-odscript"/>
+    <glob pattern="*.od"/>
   </mime-type>
 </mime-info>
