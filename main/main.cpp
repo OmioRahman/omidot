@@ -4060,7 +4060,7 @@ int Main::start() {
 
 			sml->set_auto_accept_quit(GLOBAL_GET("application/config/auto_accept_quit"));
 			sml->set_quit_on_go_back(GLOBAL_GET("application/config/quit_on_go_back"));
-			String appname = GLOBAL_GET("application/config/name");
+			String appname = "Omidot";
 			appname = TranslationServer::get_singleton()->translate(appname);
 #ifdef DEBUG_ENABLED
 			// Append a suffix to the window title to denote that the project is running
