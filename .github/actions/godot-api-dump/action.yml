@@ -1,39 +1,25 @@
-name: Dump Omidot API
-description: Dump Omidot API for GDExtension
+name: Dump Godot API
+description: Dump Godot API for GDExtension
 
 inputs:
   bin:
-    description: The path to the Omidot executable
+    description: The path to the Godot executable
     required: true
 
 runs:
   using: composite
   steps:
     # Dump GDExtension interface and API
-    - name: Dump GDExtension interface and API for omidot-cpp build
+    - name: Dump GDExtension interface and API for godot-cpp build
       shell: sh
       run: |
-        if [ ! -f "${{ inputs.bin }}" ]; then
-          echo "Executable not found: ${{ inputs.bin }}"
-          exit 1
-        fi
         ${{ inputs.bin }} --headless --dump-gdextension-interface --dump-extension-api
-        mkdir -p omidot-api
-        if [ -f "gdextension_interface.h" ]; then
-          cp -f gdextension_interface.h omidot-api/
-        else
-          echo "gdextension_interface.h not found"
-          exit 1
-        fi
-        if [ -f "extension_api.json" ]; then
-          cp -f extension_api.json omidot-api/
-        else
-          echo "extension_api.json not found"
-          exit 1
-        fi
+        mkdir godot-api
+        cp -f gdextension_interface.h godot-api/
+        cp -f extension_api.json godot-api/
 
     - name: Upload API dump
-      uses: actions/upload-artifact@v2
+      uses: ./.github/actions/upload-artifact
       with:
-        name: omidot-api-dump
-        path: ./omidot-api/*
+        name: godot-api-dump
+        path: ./godot-api/*
