@@ -48,4 +48,51 @@
      width="300.09827"
      preserveAspectRatio="none"
      id="image1" />
+  <text
+     xml:space="preserve"
+     style="font-size:81.2804px;fill:#000000;stroke-width:6.77335"
+     x="390.96051"
+     y="418.29169"
+     id="text8"
+     transform="scale(1.1324098,0.88307257)"><tspan
+       sodipodi:role="line"
+       id="tspan8"
+       x="390.96051"
+       y="418.29169"
+       style="stroke-width:6.77335"> <tspan
+   style="fill:#0e680e;fill-opacity:1;stroke-width:6.77335"
+   id="tspan10">ame Engane</tspan></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:81.2804px;fill:#000000;stroke-width:6.77335"
+     x="434.50241"
+     y="160.278"
+     id="text9"
+     transform="scale(1.1324098,0.88307257)"><tspan
+       sodipodi:role="line"
+       id="tspan9"
+       x="434.50241"
+       y="160.278"
+       style="fill:#c00427;fill-opacity:1;stroke-width:6.77335">Omi DOT</tspan></text>
+  <rect
+     style="fill:#0e1568;fill-opacity:1;stroke-width:6.77335"
+     id="rect10"
+     width="285.19101"
+     height="91.224464"
+     x="528.36993"
+     y="173.23334" />
+  <ellipse
+     style="fill:#0e685f;fill-opacity:1;stroke-width:6.77335"
+     id="path10"
+     cx="409.76715"
+     cy="267.63446"
+     rx="22.687101"
+     ry="84.981598" />
+  <ellipse
+     style="fill:#bb080c;fill-opacity:1;stroke-width:6.77335"
+     id="path11"
+     cx="969.1369"
+     cy="205.2254"
+     rx="29.423361"
+     ry="90.744095" />
 </svg>
