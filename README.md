@@ -19,6 +19,7 @@
 #Its a fork of  Godot Engine
 
 
+
 ## a fork of godot 2D and 3D cross-platform game engine
 
 **Fork of [Godot Engine](https://godotengine.org) is a feature-packed, cross-platform
@@ -44,7 +45,6 @@ Godot had been developed by [Juan Linietsky](https://github.com/reduz) and
 for several years as an in-house engine, used to publish several work-for-hire
 titles.
 
-![Screenshot of a 3D scene in the Godot Engine editor](https://raw.githubusercontent.com/godotengine/godot-design/master/screenshots/editor_tps_demo_1920x1080.jpg)
 
 ## Getting the engine
 
