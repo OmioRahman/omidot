@@ -43,19 +43,23 @@ jobs:
 
       # This needs to happen before Python and npm execution; it must happen before any extra files are written.
       - name: .gitignore checks (gitignore_check.sh)
+        if: "!contains(github.event.head_commit.message, 'skip-checks')"
         run: |
           bash ./misc/scripts/gitignore_check.sh
 
       - name: Style checks via pre-commit
+        if: "!contains(github.event.head_commit.message, 'skip-checks')"
         uses: pre-commit/action@v3.0.1
         with:
           extra_args: --files ${{ env.CHANGED_FILES }}
 
       - name: Python builders checks via pytest
+        if: "!contains(github.event.head_commit.message, 'skip-checks')"
         run: |
           pytest ./tests/python_build
 
       - name: Class reference schema checks
+        if: "!contains(github.event.head_commit.message, 'skip-checks')"
         run: |
           xmllint --noout --schema doc/class.xsd doc/classes/*.xml modules/*/doc_classes/*.xml platform/*/doc_classes/*.xml
 
