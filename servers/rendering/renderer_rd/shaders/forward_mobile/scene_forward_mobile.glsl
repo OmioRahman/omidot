@@ -1379,9 +1379,11 @@ void main() {
 			float exposure_normalization = lightmaps.data[ofs].exposure_normalization;
 
 			ambient_light += lm_light_l0 * exposure_normalization;
-			ambient_light += lm_light_l1n1 * n.y * (lm_light_l0 * exposure_normalization * 4.0);
-			ambient_light += lm_light_l1_0 * n.z * (lm_light_l0 * exposure_normalization * 4.0);
-			ambient_light += lm_light_l1p1 * n.x * (lm_light_l0 * exposure_normalization * 4.0);
+
+			ambient_light += lm_light_l1n1 * n.y * exposure_normalization;
+			ambient_light += lm_light_l1_0 * n.z * exposure_normalization;
+			ambient_light += lm_light_l1p1 * n.x * exposure_normalization;
+
 		} else {
 			if (sc_use_lightmap_bicubic_filter()) {
 				ambient_light += textureArray_bicubic(lightmap_textures[ofs], uvw, lightmaps.data[ofs].light_texture_size).rgb * lightmaps.data[ofs].exposure_normalization;

@@ -1,7 +1,7 @@
-#define MyAppName "Godot Engine"
+#define MyAppName "omidot Engine"
 #define MyAppVersion "4.4"
 #define MyAppPublisher "Godot Engine contributors"
-#define MyAppURL "https://godotengine.org/"
+#define MyAppURL "https://github.com/OmioRahman/omidot"
 #define MyAppExeName "godot.exe"
 
 [Setup]

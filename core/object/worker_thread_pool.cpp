@@ -458,25 +458,14 @@ void WorkerThreadPool::_wait_collaboratively(ThreadData *p_caller_pool_thread, T
 			bool was_signaled = p_caller_pool_thread->signaled;
 			p_caller_pool_thread->signaled = false;
 
-			bool exit = _handle_runlevel(p_caller_pool_thread, lock);
-			if (unlikely(exit)) {
-				break;
-			}
 
-			bool wait_is_over = false;
-			if (unlikely(p_task == ThreadData::YIELDING)) {
-				if (p_caller_pool_thread->yield_is_over) {
+			if (IS_WAIT_OVER) {
+				if (unlikely(p_task == ThreadData::YIELDING)) {
 					p_caller_pool_thread->yield_is_over = false;
-					wait_is_over = true;
 				}
-			} else {
-				if (p_task->completed) {
-					wait_is_over = true;
-				}
-			}
 
-			if (wait_is_over) {
-				if (was_signaled) {
+				if (!exit_threads && was_signaled) {
+
 					// This thread was awaken for some additional reason, but it's about to exit.
 					// Let's find out what may be pending and forward the requests.
 					uint32_t to_process = task_queue.first() ? 1 : 0;

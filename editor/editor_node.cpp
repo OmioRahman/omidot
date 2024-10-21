@@ -178,7 +178,9 @@ static const String REMOVE_ANDROID_BUILD_TEMPLATE_MESSAGE = "The Android build t
 static const String INSTALL_ANDROID_BUILD_TEMPLATE_MESSAGE = "This will set up your project for gradle Android builds by installing the source template to \"%s\".\nNote that in order to make gradle builds instead of using pre-built APKs, the \"Use Gradle Build\" option should be enabled in the Android export preset.";
 
 bool EditorProgress::step(const String &p_state, int p_step, bool p_force_refresh) {
-	if (!force_background && Thread::is_main_thread()) {
+
+	if (Thread::is_main_thread()) {
+
 		return EditorNode::progress_task_step(task, p_state, p_step, p_force_refresh);
 	} else {
 		EditorNode::progress_task_step_bg(task, p_step);
@@ -186,18 +188,30 @@ bool EditorProgress::step(const String &p_state, int p_step, bool p_force_refres
 	}
 }
 
+<<<<<<< HEAD
 EditorProgress::EditorProgress(const String &p_task, const String &p_label, int p_amount, bool p_can_cancel, bool p_force_background) {
 	if (!p_force_background && Thread::is_main_thread()) {
+=======
+EditorProgress::EditorProgress(const String &p_task, const String &p_label, int p_amount, bool p_can_cancel) {
+	if (Thread::is_main_thread()) {
+>>>>>>> origin/my-new-feature-branch2
 		EditorNode::progress_add_task(p_task, p_label, p_amount, p_can_cancel);
 	} else {
 		EditorNode::progress_add_task_bg(p_task, p_label, p_amount);
 	}
 	task = p_task;
+<<<<<<< HEAD
 	force_background = p_force_background;
 }
 
 EditorProgress::~EditorProgress() {
 	if (!force_background && Thread::is_main_thread()) {
+=======
+}
+
+EditorProgress::~EditorProgress() {
+	if (Thread::is_main_thread()) {
+>>>>>>> origin/my-new-feature-branch2
 		EditorNode::progress_end_task(task);
 	} else {
 		EditorNode::progress_end_task_bg(task);
@@ -676,8 +690,11 @@ void EditorNode::_notification(int p_what) {
 			last_system_accent_color = DisplayServer::get_singleton()->get_accent_color();
 			last_system_base_color = DisplayServer::get_singleton()->get_base_color();
 			DisplayServer::get_singleton()->set_system_theme_change_callback(callable_mp(this, &EditorNode::_check_system_theme_changed));
+<<<<<<< HEAD
 
 			get_viewport()->connect("size_changed", callable_mp(this, &EditorNode::_viewport_resized));
+=======
+>>>>>>> origin/my-new-feature-branch2
 
 			/* DO NOT LOAD SCENES HERE, WAIT FOR FILE SCANNING AND REIMPORT TO COMPLETE */
 		} break;

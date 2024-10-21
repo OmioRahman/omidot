@@ -1,9 +1,11 @@
-short_name = "godot"
-name = "Godot Engine"
-major = 4
-minor = 4
-patch = 0
-status = "dev"
+short_name = "Omidot"
+name = "Omidot Engine"
+major = 1
+
+minor = 3
+patch = 1
+status = "rc"
+
 module_config = ""
-website = "https://godotengine.org"
+website = "https://github.com/OmioRahman/omidot/"
 docs = "latest"

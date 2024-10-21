@@ -300,21 +300,10 @@ void OpenXRHandTrackingExtension::on_process() {
 						if (location.locationFlags & XR_SPACE_LOCATION_POSITION_VALID_BIT) {
 							XrHandTrackingDataSourceStateEXT &data_source = hand_trackers[i].data_source;
 
-							XRHandTracker::HandTrackingSource source = XRHandTracker::HAND_TRACKING_SOURCE_UNKNOWN;
-							if (hand_tracking_source_ext) {
-								if (!data_source.isActive) {
-									source = XRHandTracker::HAND_TRACKING_SOURCE_NOT_TRACKED;
-								} else if (data_source.dataSource == XR_HAND_TRACKING_DATA_SOURCE_UNOBSTRUCTED_EXT) {
-									source = XRHandTracker::HAND_TRACKING_SOURCE_UNOBSTRUCTED;
-								} else if (data_source.dataSource == XR_HAND_TRACKING_DATA_SOURCE_CONTROLLER_EXT) {
-									source = XRHandTracker::HAND_TRACKING_SOURCE_CONTROLLER;
-								} else {
-									// Data source shouldn't be active, if new data sources are added to OpenXR we need to enable them.
-									WARN_PRINT_ONCE("Unknown active data source found!");
-									source = XRHandTracker::HAND_TRACKING_SOURCE_UNKNOWN;
-								}
-							}
-							godot_tracker->set_hand_tracking_source(source);
+
+						godot_tracker->set_hand_tracking_source(source);
+						if (location.locationFlags & XR_SPACE_LOCATION_POSITION_VALID_BIT) {
+
 							godot_tracker->set_has_tracking_data(true);
 							godot_tracker->set_pose("default", transform, linear_velocity, angular_velocity);
 						} else {

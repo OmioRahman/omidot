@@ -1,8 +1,11 @@
+
 #define MyAppName "Omidot Engine"
 #define MyAppVersion "1.4"
 #define MyAppPublisher "omidot Engine contributors"
 #define MyAppURL "https://github.com/OmioRahman/omidot"
 #define MyAppExeName "omidot.exe"
+
+
 
 [Setup]
 AppId={{60D07AAA-400E-40F5-B073-A796C34D9D78}

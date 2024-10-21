@@ -83,7 +83,7 @@ class StringName {
 	static inline Mutex mutex;
 	static void setup();
 	static void cleanup();
-	static uint32_t get_empty_hash();
+
 	static inline bool configured = false;
 #ifdef DEBUG_ENABLED
 	struct DebugSortReferences {

@@ -178,6 +178,13 @@ void EditorResourcePicker::_resource_saved(Object *p_resource) {
 	}
 }
 
+void EditorResourcePicker::_resource_saved(Object *p_resource) {
+	if (edited_resource.is_valid() && p_resource == edited_resource.ptr()) {
+		emit_signal(SNAME("resource_changed"), edited_resource);
+		_update_resource();
+	}
+}
+
 void EditorResourcePicker::_update_menu() {
 	_update_menu_items();
 

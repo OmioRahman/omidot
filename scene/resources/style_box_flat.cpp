@@ -281,26 +281,14 @@ inline void draw_rounded_rectangle(Vector<Vector2> &verts, Vector<int> &indices,
 				idx_ofs *= 2;
 			}
 
-			const real_t pt_angle = (corner_idx + detail / (double)adapted_corner_detail) * quarter_arc_rad + Math_PI;
-			const real_t angle_cosine = cos(pt_angle);
-			const real_t angle_sine = sin(pt_angle);
 
-			{
-				const real_t x = inner_corner_radius[corner_idx] * angle_cosine + inner_points[corner_idx].x;
-				const real_t y = inner_corner_radius[corner_idx] * angle_sine + inner_points[corner_idx].y;
-				const float x_skew = -skew.x * (y - style_rect_center.y);
-				const float y_skew = -skew.y * (x - style_rect_center.x);
-				verts_ptr[verts_size + idx_ofs] = Vector2(x + x_skew, y + y_skew);
-				colors_ptr[colors_size + idx_ofs] = inner_color;
-			}
+				const real_t x = radius * (real_t)cos((corner_index + detail / (double)adapted_corner_detail) * (Math_TAU / 4.0) + Math_PI) + corner_point.x;
+				const real_t y = radius * (real_t)sin((corner_index + detail / (double)adapted_corner_detail) * (Math_TAU / 4.0) + Math_PI) + corner_point.y;
+				const float x_skew = -skew.x * (y - style_rect.get_center().y);
+				const float y_skew = -skew.y * (x - style_rect.get_center().x);
+				verts.push_back(Vector2(x + x_skew, y + y_skew));
+				colors.push_back(color);
 
-			if (draw_border) {
-				const real_t x = ring_corner_radius[corner_idx] * angle_cosine + outer_points[corner_idx].x;
-				const real_t y = ring_corner_radius[corner_idx] * angle_sine + outer_points[corner_idx].y;
-				const float x_skew = -skew.x * (y - style_rect_center.y);
-				const float y_skew = -skew.y * (x - style_rect_center.x);
-				verts_ptr[verts_size + idx_ofs + 1] = Vector2(x + x_skew, y + y_skew);
-				colors_ptr[colors_size + idx_ofs + 1] = outer_color;
 			}
 		}
 	}

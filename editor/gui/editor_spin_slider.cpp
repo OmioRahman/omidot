@@ -661,7 +661,9 @@ bool EditorSpinSlider::is_grabbing() const {
 }
 
 void EditorSpinSlider::_focus_entered() {
-	if (read_only) {
+
+	if (is_read_only()) {
+
 		return;
 	}
 

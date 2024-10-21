@@ -5637,7 +5637,8 @@ void RenderingDevice::swap_buffers() {
 }
 
 void RenderingDevice::submit() {
-	ERR_RENDER_THREAD_GUARD();
+
+	_THREAD_SAFE_METHOD_
 	ERR_FAIL_COND_MSG(is_main_instance, "Only local devices can submit and sync.");
 	ERR_FAIL_COND_MSG(local_device_processing, "device already submitted, call sync to wait until done.");
 
@@ -5647,10 +5648,11 @@ void RenderingDevice::submit() {
 }
 
 void RenderingDevice::sync() {
-	ERR_RENDER_THREAD_GUARD();
+
+	_THREAD_SAFE_METHOD_
 	ERR_FAIL_COND_MSG(is_main_instance, "Only local devices can submit and sync.");
 	ERR_FAIL_COND_MSG(!local_device_processing, "sync can only be called after a submit");
-
+>>>>>>> origin/my-new-feature-branch2
 	_begin_frame();
 	local_device_processing = false;
 }

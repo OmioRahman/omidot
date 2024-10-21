@@ -438,7 +438,8 @@ void EditorFileSystem::_scan_filesystem() {
 		sd = first_scan_root_dir;
 		// Will be updated on scan.
 		ResourceUID::get_singleton()->clear();
-		processed_files = memnew(HashSet<String>());
+
+
 	} else {
 		Ref<DirAccess> d = DirAccess::create(DirAccess::ACCESS_RESOURCES);
 		sd = memnew(ScannedDirectory);

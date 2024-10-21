@@ -542,26 +542,9 @@ void DisplayServerWindows::_thread_fd_monitor(void *p_ud) {
 		pfd->SetOptions(flags | FOS_FORCEFILESYSTEM);
 		pfd->SetTitle((LPCWSTR)fd->title.utf16().ptr());
 
-		String dir = ProjectSettings::get_singleton()->globalize_path(fd->current_directory);
-		if (dir == ".") {
-			dir = OS::get_singleton()->get_executable_path().get_base_dir();
-		}
-		if (dir.is_relative_path() || dir == ".") {
-			Char16String current_dir_name;
-			size_t str_len = GetCurrentDirectoryW(0, nullptr);
-			current_dir_name.resize(str_len + 1);
-			GetCurrentDirectoryW(current_dir_name.size(), (LPWSTR)current_dir_name.ptrw());
-			if (dir == ".") {
-				dir = String::utf16((const char16_t *)current_dir_name.get_data()).trim_prefix(R"(\\?\)").replace("\\", "/");
-			} else {
-				dir = String::utf16((const char16_t *)current_dir_name.get_data()).trim_prefix(R"(\\?\)").replace("\\", "/").path_join(dir);
-			}
-		}
-		dir = dir.simplify_path();
-		dir = dir.replace("/", "\\");
-		if (!dir.is_network_share_path() && !dir.begins_with(R"(\\?\)")) {
-			dir = R"(\\?\)" + dir;
-		}
+
+		String dir = fd->current_directory.replace("/", "\\");
+
 
 		IShellItem *shellitem = nullptr;
 		hr = SHCreateItemFromParsingName((LPCWSTR)dir.utf16().ptr(), nullptr, IID_IShellItem, (void **)&shellitem);
