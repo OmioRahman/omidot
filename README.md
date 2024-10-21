@@ -1,14 +1,14 @@
-# <span style="color: green;">**OmiDot**</span>
+# **OmiDot**
 
-<p align="center" style="background-color: white; padding: 20px;">
+<p align="center">
   <img src="images/omidotimage.png" width="400" alt="OmiDot Engine logo" style="border: 2px solid green; border-radius: 10px;">
 </p>
 ## Features
 
-- <span style="color: green;**Fork of Godot engine**: In case my country get sanction and so i can continue to use the engine
-- <span style="color: green;**For Commercial, Archivial and personal projects**: I want to continue the project and can inspite if the license changes and my country gets sanction
--<span style="color: green; **To learn programming and experiment with the engine **:   i want to get good at programming . -dont expect a stable product as i will expermient on it
--<span style="color: green;**For reasearch purposes**:  
+- **Fork of Godot engine**: In case my country get sanction and so i can continue to use the engine
+- **For Commercial, Archivial and personal projects**: I want to continue the project and can inspite if the license changes and my country gets sanction
+- **To learn programming and experiment with the engine **:   i want to get good at programming . -dont expect a stable product as i will expermient on it
+-**For reasearch purposes**:  
 
 - <span style="color: green;**Adding custom modification and astehtics**: I want to add my own features to the engine to focus it on codeless if i get good at programming
 -<span style="color: purple; I dont know how to change logo
