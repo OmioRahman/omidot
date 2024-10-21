@@ -3,7 +3,6 @@
 <p align="center" style="background-color: white; padding: 20px;">
   <img src="images/omidotimage.png" width="400" alt="OmiDot Engine logo" style="border: 2px solid green; border-radius: 10px;">
 </p>
-
 ## Features
 
 - <span style="color: green;**Fork of Godot engine**: In case my country get sanction and so i can continue to use the engine
