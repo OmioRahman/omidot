@@ -1,91 +1,57 @@
-# **Omidot**
-<p align="center">
+# <span style="color: green;">**OmiDot**</span>
 
-<img src="images/omidotimage.png" width="400" alt="Omidot Engine logo">
-
+<p align="center" style="background-color: white; padding: 20px;">
+  <img src="images/omidotimage.png" width="400" alt="OmiDot Engine logo" style="border: 2px solid green; border-radius: 10px;">
 </p>
 
 ## Features
 
-- **Fork of Godot engine**: In case my country get sanction and so i can continue to use the engine
-- **For Commercial, Archivial and personal projects**: I want to continue the project and can inspite if the license changes and my country gets sanction
-- **To learn programming and experiment with the engine **:   i want to get good at programming . -dont expect a stable product as i will expermient on it
-- - **For reasearch purposes**:  
+- <span style="color: green;**Fork of Godot engine**: In case my country get sanction and so i can continue to use the engine
+- <span style="color: green;**For Commercial, Archivial and personal projects**: I want to continue the project and can inspite if the license changes and my country gets sanction
+-<span style="color: green; **To learn programming and experiment with the engine **:   i want to get good at programming . -dont expect a stable product as i will expermient on it
+-<span style="color: green;**For reasearch purposes**:  
 
-- **Adding custom modification and astehtics**: I want to add my own features to the engine to focus it on codeless if i get good at programming
-- I dont know how to change logo
+- <span style="color: green;**Adding custom modification and astehtics**: I want to add my own features to the engine to focus it on codeless if i get good at programming
+-<span style="color: purple; I dont know how to change logo
 
 #**original readme:**
 #Its a fork of  Godot Engine
-
+## Platforms
+- **Supported Platforms**: Windows and Linux only. 
 
 
 ## a fork of godot 2D and 3D cross-platform game engine
 
-**Fork of [Godot Engine](https://godotengine.org) is a feature-packed, cross-platform
-game engine to create 2D and 3D games from a unified interface.** It provides a
-comprehensive set of [common tools](https://godotengine.org/features), so that
-users can focus on making games without having to reinvent the wheel. Games can
-be exported with one click to a number of platforms, including the major desktop
-platforms (Linux, macOS, Windows), mobile platforms (Android, iOS), as well as
-Web-based platforms and [consoles](https://docs.godotengine.org/en/latest/tutorials/platform/consoles.html).
+**Fork of [Godot Engine](https://godotengine.org) is a 
+game engine to create 2D and 3D games ** [consoles](https://docs.godotengine.org/en/latest/tutorials/platform/consoles.html).
 
 ## Free, open source and community-driven
 
-Godot is completely free and open source under the very permissive [MIT license](https://godotengine.org/license).
+omidot is   free and open source under   [MIT license](https://godotengine.org/license).
 No strings attached, no royalties, nothing. The users' games are theirs, down
-to the last line of engine code. Godot's development is fully independent and
-community-driven, empowering users to help shape their engine to match their
-expectations. It is supported by the [Godot Foundation](https://godot.foundation/)
-not-for-profit.
+to the last line of engine code
 
 Before being open sourced in [February 2014](https://github.com/godotengine/godot/commit/0b806ee0fc9097fa7bda7ac0109191c9c5e0a1ac),
 Godot had been developed by [Juan Linietsky](https://github.com/reduz) and
 [Ariel Manzur](https://github.com/punto-) (both still maintaining the project)
 for several years as an in-house engine, used to publish several work-for-hire
 titles.
+## Documentation and Stability
+For detailed information and guidance, please refer to the [Godot 4.3 Documentation](([https://docs.godotengine.org](https://docs.godotengine.org/en/stable/)). Our unstable branches use Godot 4.4 Dev Beta 3, for which the [Godot 4.4 Documentation]((https://docs.godotengine.org) is relevant.
+## Documentation and Demos
+For comprehensive guidance and detailed information, please refer to the [official Godot 4.3 documentatio on Read the Docs. This documentation is meticulously maintained by the Godot community and can be found in their own [GitHub repository](https://github.com/godotengine/godot-docs).
+
 
 
 ## Getting the engine
+### Binary Downloads
+Currently, the main executable build for OmiDot is not available. Users can compile the engine from source. 
+### Export Templates
+To export your projects for various platforms, you will need the Godot export templates. These can be downloaded from the [Godot website](https://godotengine.org/download).
 
-### Binary downloads
+the export templates for Godot editor can be found [on the Godot website](https://godotengine.org/download).
 
-Official binaries for the Godot editor and the export templates can be found
-[on the Godot website](https://godotengine.org/download).
+### Compiling from Source
+For detailed instructions on compiling the engine from source, please refer to the [official Godot documentation](https://docs.godotengine.org/en/latest/contributing/development/compiling).
 
-### Compiling from source
 
-[See the official docs](https://docs.godotengine.org/en/latest/contributing/development/compiling)
-for compilation instructions for every supported platform.
-
-## Community and contributing
-
-Godot is not only an engine but an ever-growing community of users and engine
-developers. The main community channels are listed [on the homepage](https://godotengine.org/community).
-
-The best way to get in touch with the core engine developers is to join the
-[Godot Contributors Chat](https://chat.godotengine.org).
-
-To get started contributing to the project, see the [contributing guide](CONTRIBUTING.md).
-This document also includes guidelines for reporting bugs.
-
-## Documentation and demos
-
-The official documentation is hosted on [Read the Docs](https://docs.godotengine.org).
-It is maintained by the Godot community in its own [GitHub repository](https://github.com/godotengine/godot-docs).
-
-The [class reference](https://docs.godotengine.org/en/latest/classes/)
-is also accessible from the Godot editor.
-
-We also maintain official demos in their own [GitHub repository](https://github.com/godotengine/godot-demo-projects)
-as well as a list of [awesome Godot community resources](https://github.com/godotengine/awesome-godot).
-
-There are also a number of other
-[learning resources](https://docs.godotengine.org/en/latest/community/tutorials.html)
-provided by the community, such as text and video tutorials, demos, etc.
-Consult the [community channels](https://godotengine.org/community)
-for more information.
-
-[![Code Triagers Badge](https://www.codetriage.com/godotengine/godot/badges/users.svg)](https://www.codetriage.com/godotengine/godot)
-[![Translate on Weblate](https://hosted.weblate.org/widgets/godot-engine/-/godot/svg-badge.svg)](https://hosted.weblate.org/engage/godot-engine/?utm_source=widget)
-[![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/godotengine/godot)](https://www.tickgit.com/browse?repo=github.com/godotengine/godot)
