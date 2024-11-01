@@ -84,7 +84,7 @@ class StringName {
 	static void setup();
 	static void cleanup();
 	
-	static uint32_t get_empty_hash(); //to avoid complier empty hash error
+	static uint32_t get_empty_hash(); //to avoid compiler empty hash error
 
 
 	static inline bool configured = false;
