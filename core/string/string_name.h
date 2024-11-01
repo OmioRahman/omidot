@@ -83,6 +83,9 @@ class StringName {
 	static inline Mutex mutex;
 	static void setup();
 	static void cleanup();
+	
+	static uint32_t get_empty_hash(); //to avoid complier empty hash error
+
 
 	static inline bool configured = false;
 #ifdef DEBUG_ENABLED
